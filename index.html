@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biserica Maslinul</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #005a2b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #e0e0e0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #005a2b;
+      font-weight: bold;
+    }
+    #lang-selector {
+      margin-top: 10px;
+    }
+    section {
+      padding: 20px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #005a2b;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Biserica Maslinul</h1>
+  <p id="slogan">Un luogo di fede, speranza e comunità</p>
+  <div id="lang-selector">
+    <label for="language">Lingua / Limba:</label>
+    <select id="language" onchange="changeLanguage()">
+      <option value="it">🇮🇹 Italiano</option>
+      <option value="ro">🇷🇴 Română</option>
+    </select>
+  </div>
+</header>
+
+<nav>
+  <a href="#chi-siamo" id="nav-about">Chi Siamo</a>
+  <a href="#contatti" id="nav-contact">Contatti</a>
+  <a href="#posizione" id="nav-location">Posizione</a>
+</nav>
+
+<section id="chi-siamo">
+  <h2 id="title-about">Chi Siamo</h2>
+  <p id="text-about">Biserica Maslinul è una comunità cristiana che si riunisce con fede e dedizione a Oderzo. Il nostro obiettivo è vivere secondo i principi del Vangelo, offrendo un punto di riferimento spirituale e sociale per famiglie e individui.</p>
+</section>
+
+<section id="contatti">
+  <h2 id="title-contact">Contatti</h2>
+  <p id="text-contact1">Email: info@bisericamaslinul.it</p>
+  <p id="text-contact2">Telefono: +39 345 6789012</p>
+  <p id="text-contact3">Orari degli incontri: Domenica 10:00 - 12:00, Mercoledì 20:00 - 21:30</p>
+</section>
+
+<section id="posizione">
+  <h2 id="title-location">Posizione</h2>
+  <p id="text-location">Ci trovi nella zona industriale di Oderzo (TV).</p>
+  <iframe
+    src="https://www.google.com/maps?q=zona+industriale+Oderzo&output=embed"
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+</section>
+
+<footer>
+  <p>&copy; 2025 Biserica Maslinul - Tutti i diritti riservati</p>
+</footer>
+
+<script>
+  const translations = {
+    it: {
+      slogan: "Un luogo di fede, speranza e comunità",
+      navAbout: "Chi Siamo",
+      navContact: "Contatti",
+      navLocation: "Posizione",
+      titleAbout: "Chi Siamo",
+      textAbout: "Biserica Maslinul è una comunità cristiana che si riunisce con fede e dedizione a Oderzo. Il nostro obiettivo è vivere secondo i principi del Vangelo, offrendo un punto di riferimento spirituale e sociale per famiglie e individui.",
+      titleContact: "Contatti",
+      textContact1: "Email: info@bisericamaslinul.it",
+      textContact2: "Telefono: +39 345 6789012",
+      textContact3: "Orari degli incontri: Domenica 10:00 - 12:00, Mercoledì 20:00 - 21:30",
+      titleLocation: "Posizione",
+      textLocation: "Ci trovi nella zona industriale di Oderzo (TV)."
+    },
+    ro: {
+      slogan: "Un loc de credință, speranță și comunitate",
+      navAbout: "Despre Noi",
+      navContact: "Contact",
+      navLocation: "Locație",
+      titleAbout: "Despre Noi",
+      textAbout: "Biserica Maslinul este o comunitate creștină care se adună cu credință și devotament la Oderzo. Scopul nostru este să trăim conform principiilor Evangheliei, oferind un punct de referință spiritual și social pentru familii și persoane.",
+      titleContact: "Contact",
+      textContact1: "Email: info@bisericamaslinul.it",
+      textContact2: "Telefon: +39 345 6789012",
+      textContact3: "Program: Duminică 10:00 - 12:00, Miercuri 20:00 - 21:30",
+      titleLocation: "Locație",
+      textLocation: "Ne găsiți în zona industrială din Oderzo (TV)."
+    }
+  };
+
+  function changeLanguage() {
+    const lang = document.getElementById("language").value;
+    const t = translations[lang];
+
+    document.getElementById("slogan").textContent = t.slogan;
+    document.getElementById("nav-about").textContent = t.navAbout;
+    document.getElementById("nav-contact").textContent = t.navContact;
+    document.getElementById("nav-location").textContent = t.navLocation;
+
+    document.getElementById("title-about").textContent = t.titleAbout;
+    document.getElementById("text-about").textContent = t.textAbout;
+
+    document.getElementById("title-contact").textContent = t.titleContact;
+    document.getElementById("text-contact1").textContent = t.textContact1;
+    document.getElementById("text-contact2").textContent = t.textContact2;
+    document.getElementById("text-contact3").textContent = t.textContact3;
+
+    document.getElementById("title-location").textContent = t.titleLocation;
+    document.getElementById("text-location").textContent = t.textLocation;
+  }
+</script>
+
+</body>
+</html>
