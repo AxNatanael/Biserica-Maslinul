@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La nostra fede</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header id="navbar">
+    <div class="navbar-left">Biserica Maslinul</div>
+  <nav class="navbar-right">
+    <ul class="navbar-menu">
+      <li><a href="index.html"> Torna alla pagina Home</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+    <div class="contenitore">
+      <h1>La nostra fede</h1>
+
+      <ol class="lista-fede">
+         <li>
+          <strong>Scrittura</strong><br>
+          Crediamo che la Bibbia, composta dall’Antico e Nuovo Testamento, sia la Parola autentica e ispirata di Dio, senza errore nella sua forma originale. Essa rimane l’autorità suprema in materia di fede e vita.
+        </li>
+        <li>
+          <strong>Dio Trino</strong><br>
+          Dio è Uno solo, ma si rivela in tre Persone distinte: Padre, Figlio e Spirito Santo — uguali in potere e gloria.
+        </li>
+        <li>
+          <strong>Padre Celeste</strong><br>
+          Confessiamo Dio Padre come Creatore di tutte le cose, fonte della vita e sostenitore dell’intero universo. È degno di adorazione, onore e lode eterna.
+        </li>
+        <li>
+          <strong>Figlio di Dio</strong><br>
+          Gesù Cristo è il Figlio eterno di Dio, nato per opera dello Spirito Santo e della Vergine Maria. È venuto sulla terra per riscattarci con la Sua morte sulla croce e risorto il terzo giorno. Oggi intercede per noi alla destra del Padre.
+        </li>
+        <li>
+          <strong>Spirito Santo</strong><br>
+          Lo Spirito di Dio dimora nei credenti, li guida, insegna e dà forza a vivere nella volontà del Signore. Porta convinzione di peccato, nuova nascita e guida quotidiana.
+        </li>
+        <li>
+          <strong>L’uomo e il peccato</strong><br>
+          L’essere umano è stato creato a immagine di Dio, ma è caduto nel peccato. Perciò tutti gli uomini sono spiritualmente separati da Dio e hanno bisogno della Sua salvezza.
+        </li>
+        <li>
+          <strong>Pentimento e trasformazione</strong><br>
+          Il ritorno sincero a Dio significa rinunciare al peccato. La nuova nascita è l’opera di Dio nella vita di chi si pente. La santificazione è una vita vissuta nell’obbedienza a Dio e alla Sua Parola.
+        </li>
+        <li>
+          <strong>Salvezza</strong><br>
+          Attraverso il sacrificio di Gesù Cristo, chiunque si pente e crede in Lui può ricevere perdono, riconciliazione con Dio e vita eterna.
+        </li>
+        <li>
+          <strong>Chiesa di Cristo</strong><br>
+          La vera Chiesa è composta da tutti coloro che sono stati rigenerati spiritualmente per fede in Gesù e vivono uniti come un solo corpo sotto la Sua guida.
+        </li>
+        <li>
+          <strong>Appartenenza alla Chiesa</strong><br>
+          Un membro autentico della Chiesa è una persona nata di nuovo, sottomessa alla Parola di Dio, dedicata alla vita di fede e obbediente all’autorità spirituale.
+        </li>
+        <li>
+          <strong>Cammino spirituale</strong><br>
+          La vita cristiana si vive in dipendenza dallo Spirito Santo, riflettendo il carattere di Cristo attraverso amore, unità e santità.
+        </li>
+        <li>
+          <strong>Battesimo d’acqua</strong><br>
+          Il battesimo è una testimonianza esteriore di un cambiamento interiore, simboleggiando la morte e la resurrezione con Cristo. È riservato a chi si è pentito ed è nato di nuovo.
+        </li>
+        <li>
+          <strong>Battesimo nello Spirito Santo</strong><br>
+          Questa esperienza è distinta dalla salvezza e dà al credente potere spirituale per la vita e un servizio efficace.
+        </li>
+        <li>
+          <strong>Doni dello Spirito</strong><br>
+          Dio dona alla Chiesa diversi doni spirituali, per mezzo dello Spirito Santo, per l’edificazione e il rafforzamento del Corpo di Cristo.
+        </li>
+        <li>
+          <strong>Frutto dello Spirito</strong><br>
+          Una vita guidata dallo Spirito sarà segnata da frutti visibili: amore, pace, pazienza, bontà, fedeltà, mitezza e dominio di sé.
+        </li>
+        <li>
+          <strong>Cena del Signore</strong><br>
+          È una commemorazione sacra della morte di Cristo ed è riservata a chi è nato di nuovo, vive una vita pura ed è stato battezzato.
+        </li>
+        <li>
+          <strong>Servizio</strong><br>
+          Tutti i credenti sono chiamati a servire, ma Dio dispone alcuni lavoratori spirituali in ruoli speciali per l’edificazione della Chiesa.
+        </li>
+        <li>
+          <strong>Famiglia</strong><br>
+          La famiglia è un’istituzione creata da Dio, fondata nel matrimonio tra un uomo e una donna, basata sull’amore, fedeltà e patto sacro.
+        </li>
+        <li>
+          <strong>Missione della Chiesa</strong><br>
+          Siamo inviati a proclamare il Vangelo in tutto il mondo, fare discepoli e insegnare loro a osservare gli insegnamenti di Gesù Cristo.
+        </li>
+        <li>
+          <strong>Destino finale</strong><br>
+          Attendiamo il ritorno di Gesù per prendere la Sua Chiesa. Crediamo nella risurrezione dei morti, nel giudizio finale e nell’esistenza eterna: o con Dio in cielo, o nella separazione eterna nel castigo dell’inferno.
+        </li>
+      </ol>
+    </div>
+  </main>
+
+  <footer id="footer-bar">
+    <div style="margin-top: 8px; font-size: 0.9rem;">
+      All Rights Reserved © by Biserica Maslinul
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop && scrollTop > 50) {
+        navbar.style.opacity = '0';
+        navbar.style.pointerEvents = 'none';
+      } else {
+        navbar.style.opacity = '1';
+        navbar.style.pointerEvents = 'auto';
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  </script>
+
+</body>
+</html>

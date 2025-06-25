@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biserica Maslinul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header id="navbar">
+    <div class="navbar-left">Biserica Maslinul</div>
+  <nav class="navbar-right">
+    <ul class="navbar-menu">
+      <li><a href="#chi-siamo">Chi Siamo</a></li>
+      <li><a href="#funzioni">Funzioni</a></li>
+      <li><a href="#posizione">Posizione</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+      <li><a href="#about">La nostra fede</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+    <div class="contenitore">
+        <img src="immagini/poza porumbel.png" alt="Immagine principale" class="immagine-hero" />
+    </div>
+   <!-- <section id="hero" style="margin-top: 50px;">
+      <h1>Benvenuti a Biserica Maslinul</h1>
+      <p>Una comunità accogliente e dinamica</p>
+    </section> -->
+
+    <section id="chi-siamo">
+      <h2>Chi siamo</h2>
+      <p>
+        Siamo una comunità impegnata a diffondere pace, amore e solidarietà. Crediamo nell'importanza di una famiglia unita e di un ambiente accogliente per tutti.
+      </p>
+    </section>
+
+    <section >
+        <h2>Le funzioni religiose</h2>
+        <ul>
+            <li>Giovedì : 19:30 - 21:00</li>
+            <li>Domenica Mattina : 10:00 - 12:00</li>
+            <li>Domenica Sera : 18:00 - 20:00</li>
+        </ul>
+    </section>
+
+    <section id="posizione">
+      <h2>La nostra posizione</h2>
+      <p>Via Dante Alighieri 13, Annone Veneto</p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.921902930937!2d12.900815715743855!3d45.85527307910656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fcb3bbcb82c4d%3A0xd38d15f4ed2d0d4!2sVia%20Dante%20Alighieri%2013%2C%2030000%20Annone%20Veneto%20VE!5e0!3m2!1sit!2sit!4v1698198276610!5m2!1sit!2sit"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <p>Email: info@bisericamaslinul.it</p>
+      <p>Telefono: +39 123 456 7890</p>
+    </section>
+    
+    <section id="about">
+        <h2>La nostra fede</h2>
+        <p>Scopri di più su di noi in questa pagina dedicata. <a href="fede.html" class="external-link">fede</a></p>
+    </section>
+
+    </main>
+
+  <footer id="footer-bar">
+    <div style="margin-top: 8px; font-size: 0.9rem;">
+      All Rights Reserved © by Biserica Maslinul
+    </div>
+  </footer>
+
+  <script>
+    // Effetto dissolvenza della navbar in alto
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop && scrollTop > 50) {
+        // scroll verso il basso -> dissolvi navbar
+        navbar.style.opacity = '0';
+        navbar.style.pointerEvents = 'none'; // per non interferire con click ecc
+      } else {
+        // scroll verso l'alto o vicino al top -> mostra navbar
+        navbar.style.opacity = '1';
+        navbar.style.pointerEvents = 'auto';
+      }
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  </script>
+
+</body>
+</html>
