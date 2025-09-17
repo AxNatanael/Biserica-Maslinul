@@ -1,134 +1,133 @@
 <!doctype html>
-<html lang="it">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Biserica Maslinul</title>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Biserica Maslinul</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <div class="brand">
+          <img src="immagini/poza porumbel.png" alt="logo">
+          <div>
+            <h1>Biserica Maslinul</h1>
+            <div class="muted">Via Esempio 1 — Oderzo</div>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+         <div class="language-switcher">
+           <select onchange="location = this.value;">
+              <option value="index.html" selected>🇷🇴 Română</option>
+              <option value="index_it.html">🇮🇹 Italiano</option>
+            </select>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="fede.html">Credinta noastra</a></li>
+            <li><a href="storicoChiesa.html">Istoricul biserici</a></li>
+            <li><a href="#foto">Foto</a></li>
+            <li><a href="contatti.html">Contacte</a></li>
+          </ul>
+        </nav>
+      </div>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+      <div class="container hero">
+        <div class="hero-inner">
+          <h2 id="home">&quot;1 Corinteni 15 : 57 - 58 &quot;</h2>
+          <p>Dar mulţumiri fie aduse lui Dumnezeu, care ne dă biruinţa prin Domnul nostru Isus Hristos! De aceea, preaiubiţii mei fraţi, fiţi tari, neclintiţi, sporiţi totdeauna în lucrul Domnului, căci ştiţi că osteneala voastră în Domnul nu este zadarnică.</p>
+        </div>
 
-  <!-- Foglio di stile -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container topbar">
-      <div class="brand">
-        <img src="immagini/poza porumbel.png" alt="logo">
-        <div>
-          <h1>Maranata Verona (esempio)</h1>
-          <div class="muted">Via Esempio 1 — Verona</div>
+        <div class="card-image">
+          <img src="immagini/poza porumbel.png" >
         </div>
       </div>
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#chi-siamo">Chi siamo</a></li>
-          <li><a href="#eventi">Eventi</a></li>
-          <li><a href="#foto">Foto</a></li>
-          <li><a href="#contatti">Contatti</a></li>
-        </ul>
-      </nav>
-    </div>
+    </header>
 
-    <div class="container hero">
-      <div class="hero-inner">
-        <h2 id="home">&quot;Venite a me, voi tutti…&quot;</h2>
-        <p>Benvenuti nel sito di esempio creato per mostrarti come replicare lo stile e le funzionalità del sito di riferimento: presentazione, eventi, galleria e modulo di contatto.</p>
-        <a class="cta" href="#contatti">Contattaci</a>
-      </div>
-      <div class="card">
-        <strong>Orari</strong>
-        <p class="muted spaced">Giovedì 20:00 - 21:30<br>Domenica 09:00 - 12:00 / 18:00 - 20:00</p>
-        <hr>
-        <strong>Missione</strong>
-        <p class="muted spaced">Una comunità cristiana che condivide il Vangelo e sostiene le persone nella crescita spirituale.</p>
-      </div>
-    </div>
-  </header>
+    <main class="container">
+      <section id="chi-siamo">
+        <div class="card">
+          <h3>Cine suntem</h3>
+          <p>Suntem o comunitate crestina pendicostala infintata un anul 2015 sub CCP</p>
+        </div>
+      </section>
 
-  <main class="container">
-    <section id="chi-siamo">
-      <div class="card">
-        <h3>Chi siamo</h3>
-        <p>Testo demo che descrive la comunità, la storia e i principi. Sostituisci qui con il tuo contenuto reale.</p>
-      </div>
-    </section>
-
-    <section id="eventi">
-      <h3>Eventi</h3>
-      <div class="card events-list">
-        <article class="event">
-          <div class="dot" aria-hidden></div>
-          <div>
-            <h4>Incontro di preghiera — 27 Ott 2025</h4>
-            <p class="muted">Dalle 20:00 alle 22:00 — Chiesa centrale</p>
-          </div>
-        </article>
-
-        <article class="event">
-          <div class="dot"></div>
-          <div>
-            <h4>Festa della comunità — 10 Nov 2025</h4>
-            <p class="muted">Celebrazione e pranzo comunitario</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="foto">
-      <h3>Foto</h3>
-      <div class="galleria">
-        <img src="https://picsum.photos/id/1015/800/600" alt="Foto 1" data-full="https://picsum.photos/id/1015/1400/1000">
-        <img src="https://picsum.photos/id/1016/800/600" alt="Foto 2" data-full="https://picsum.photos/id/1016/1400/1000">
-        <img src="https://picsum.photos/id/1020/800/600" alt="Foto 3" data-full="https://picsum.photos/id/1020/1400/1000">
-        <img src="https://picsum.photos/id/1024/800/600" alt="Foto 4" data-full="https://picsum.photos/id/1024/1400/1000">
-        <img src="https://picsum.photos/id/1031/800/600" alt="Foto 5" data-full="https://picsum.photos/id/1031/1400/1000">
-        <img src="https://picsum.photos/id/1035/800/600" alt="Foto 6" data-full="https://picsum.photos/id/1035/1400/1000">
-      </div>
-    </section>
-
-    <section id="contatti">
-      <h3>Contatti</h3>
-      <div class="card">
-        <form id="contactForm" onsubmit="return false">
-          <div class="form-grid">
+      <section id="eventi">
+        <h3>Intalniri in timpul saptamani</h3>
+        <div class="card events-list">
+          <article class="event">
+            <div class="dot" aria-hidden></div>
             <div>
-              <label for="name">Nome</label>
-              <input id="name" name="name" placeholder="Il tuo nome">
+              <h4>Joi Seara</h4>
+              <p class="muted">De la orele 19:30 la aproximativ 20:00</p>
             </div>
+          </article>
+
+          <article class="event">
+            <div class="dot"></div>
             <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="tuo@email.it">
+              <h4>Duminica Dimineata</h4>
+              <p class="muted">De la orele 10:00 la aproximativ 12:00</p>
             </div>
+          </article>
+
+          <article class="event">
+            <div class="dot"></div>
+            <div>
+              <h4>Duminica Seara</h4>
+              <p class="muted">De la orele 18:00 la aproximativ 20:00</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="mappa">
+          <h3>Unde Suntem</h3>
+          <div class="card">
+            <p>Annone Veneto - Via Dante alighieri 13</p>
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.921902930937!2d12.900815715743855!3d45.85527307910656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fcb3bbcb82c4d%3A0xd38d15f4ed2d0d4!2sVia%20Dante%20Alighieri%2013%2C%2030000%20Annone%20Veneto%20VE!5e0!3m2!1sit!2sit!4v1698198276610!5m2!1sit!2sit" 
+                  width="100%" 
+                  height="400" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
           </div>
-          <div style="margin-top:12px">
-            <label for="message">Messaggio</label>
-            <textarea id="message" name="message" rows="5" placeholder="Scrivi qui il messaggio..."></textarea>
-          </div>
-          <div style="margin-top:12px">
-            <button id="sendBtn" class="btn">Invia</button>
-          </div>
-        </form>
+      </section>
+
+      <section id="foto">
+        <h3>Foto</h3>
+        <div class="galleria">
+          <img src="https://picsum.photos/id/1015/800/600" alt="Foto 1" data-full="https://picsum.photos/id/1015/1400/1000">
+          <img src="https://picsum.photos/id/1016/800/600" alt="Foto 2" data-full="https://picsum.photos/id/1016/1400/1000">
+          <img src="https://picsum.photos/id/1020/800/600" alt="Foto 3" data-full="https://picsum.photos/id/1020/1400/1000">
+          <img src="https://picsum.photos/id/1024/800/600" alt="Foto 4" data-full="https://picsum.photos/id/1024/1400/1000">
+          <img src="https://picsum.photos/id/1031/800/600" alt="Foto 5" data-full="https://picsum.photos/id/1031/1400/1000">
+          <img src="https://picsum.photos/id/1035/800/600" alt="Foto 6" data-full="https://picsum.photos/id/1035/1400/1000">
+        </div>
+      </section>
+      <br><br><br>
+
+      
+    </main>
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© 2025 Biserica Penticostala Maslinul. Toate drepturile rezervate</div>
+        <div class="muted">emil@example.com • +39 333 1234567</div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-      <div>© 2025 Esempio Chiesa • Via Esempio 1 • Verona</div>
-      <div class="muted">emil@example.com • +39 333 1234567</div>
+    <!-- Lightbox fullscreen -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+      <div class="close" id="lbClose" aria-label="Chiudi">✕</div>
+      <img id="lbImg" alt="immagine ingrandita">
     </div>
-  </footer>
 
-  <!-- Lightbox fullscreen -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
-    <div class="close" id="lbClose" aria-label="Chiudi">✕</div>
-    <img id="lbImg" alt="immagine ingrandita">
-  </div>
-
-  <!-- Script -->
-  <script src="script.js"></script>
-</body>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
