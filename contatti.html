@@ -13,6 +13,16 @@
     </head>
     <body>
         <header class="site-header">
+            <button class="mobile-nav-toggle" aria-label="Apri menu">☰</button>
+            <nav class="salame">
+                <ul style="list-style-type: none;">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="fede.html">Credinta noastra</a></li>
+                    <li><a href="storicoChiesa.html">Istoricul biserici</a></li>
+                    <li><a href="#foto">Foto</a></li>
+                    <li><a href="contatti.html">Contacte</a></li>
+                </ul>
+            </nav>  
             <div class="container topbar">
                 <div class="brand">
                 <img src="immagini/poza porumbel.png" alt="logo">
@@ -74,5 +84,12 @@
                 <div class="muted">emil@example.com • +39 333 1234567</div>
             </div>
         </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+      <div class="close" id="lbClose" aria-label="Chiudi">✕</div>
+      <img id="lbImg" alt="immagine ingrandita">
+    </div>
+    
+        <script src="script.js" defer></script>
   </body>
 </html>
