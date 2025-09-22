@@ -14,7 +14,7 @@
 html,
 body {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   min-height: 100%;
   
 }
@@ -324,6 +324,10 @@ footer {
 }
 
 @media (max-width: 700px) {
+  body {
+    padding-bottom: 90px; /* padding più piccolo su smartphone */
+  }
+
   nav.main-nav ul {
     display: none;
   }
@@ -373,4 +377,92 @@ footer {
   .hero p {
     font-size: 0.95rem;
   }
+}
+
+
+
+
+
+
+
+
+/* Foto */
+
+    /* Menu foto */
+    .foto-menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .foto-menu button {
+      padding: 20px 40px;
+      border: none;
+      border-radius: 8px;
+      background: #2c6b6b;
+      color: white;
+      font-weight: bold;
+      font-size:large;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .foto-menu button:hover,
+    .foto-menu button.active {
+      background: #1f4d4d;
+    }
+
+    /* Galleria 
+    .galleria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      align-items: center;
+    }
+    .galleria img {
+      width: 100px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      
+    }
+    .galleria img:hover {
+      transform: scale(1.05);
+    }*/
+
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 150px; /* altezza base per le celle */
+  gap: 1rem;
+  padding: 1rem;
+  grid-auto-flow: dense; /* riempie gli spazi vuoti automaticamente */
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantiene proporzioni e riempie la cella */
+  display: block;
+  border-radius: 8px;
+}
+
+/* dimensioni diverse */
+.img-1x1 {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.img-2x1 {
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+.img-2x2 {
+  grid-row: span 2;
+  grid-column: span 2;
 }
