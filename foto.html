@@ -1,1 +1,93 @@
-IN COSTRUZIONE
+<!doctype html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Biserica Maslinul</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="immagini/poza porumbel.png" type="image/x-icon">
+    </head>
+    <body>
+        <header class="site-header">
+            <button class="mobile-nav-toggle" aria-label="Apri menu">☰</button>
+            <nav class="salame">
+                <ul style="list-style-type: none;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fede.html">Credinta noastra</a></li>
+                    <li><a href="storicoChiesa.html">Istoricul biserici</a></li>
+                    <li><a href="foto.html">Foto</a></li>
+                    <li><a href="contatti.html">Contacte</a></li>
+                </ul>
+            </nav>  
+            <div class="container topbar">
+                <div class="brand">
+                    <img src="immagini/poza porumbel.png" alt="logo">
+                    <div>
+                        <h1>Biserica Maslinul</h1>
+                        <div class="muted">Oderzo - Via Padova 6</div>
+                    </div>
+                </div>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <div class="language-switcher">
+                        <select onchange="location = this.value;">
+                            <option value="foto.html" selected>🇷🇴 Română</option>
+                            <option value="foto_it.html">🇮🇹 Italiano</option>
+                        </select>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fede.html">Credinta noastra</a></li>
+                        <li><a href="storicoChiesa.html">Istoricul biserici</a></li>
+                        <li><a href="foto.html">Foto</a></li>
+                        <li><a href="contatti.html">Contacte</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+
+            <h1 style="text-align:center; margin-top:20px;">Galerie Foto</h1>
+
+            <!-- Menu filtri -->
+            <div class="foto-menu">
+                <button class="active" onclick="filterSelection('all')">Toate</button>
+                <button onclick="filterSelection('2024')">2024</button>
+                <button onclick="filterSelection('2023')">2023</button>
+                <button onclick="filterSelection('craciun')">Crăciun</button>
+                <button onclick="filterSelection('paste')">Paște</button>
+            </div>
+
+            
+            <div class="grid">
+                <img src="immagini/VICTUS Dark 3.jpg" class="filterDiv 2024 img-2x2" alt="2024">
+                <img src="immagini/Victus Eye.jpg" class="filterDiv 2023 img-1x1" alt="2023">
+                <img src="immagini/Victus Stripe.png" class="filterDiv craciun img-1x1" alt="craciun">
+                <img src="immagini/VICTUS Welcome To Vice City 2025.png" class="filterDiv paste img-2x1" alt="paste">
+                <img src="immagini/VICTUS Dark 3.jpg" class="filterDiv 2024 img-2x2" alt="2024">
+                <img src="immagini/Victus Eye.jpg" class="filterDiv 2023 img-1x1" alt="2023">
+                <img src="immagini/Victus Stripe.png" class="filterDiv craciun img-1x1" alt="craciun">
+                <img src="immagini/VICTUS Welcome To Vice City 2025.png" class="filterDiv paste img-2x1" alt="paste">
+            </div>
+
+
+        </main>
+
+        <footer>
+            <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+                <div>© 2025 Biserica Penticostala Maslinul. Toate drepturile rezervate</div>
+                <div class="muted">emil@example.com • +39 333 1234567</div>
+            </div>
+        </footer>
+
+        <!-- Lightbox fullscreen -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+            <div class="close" id="lbClose" aria-label="Chiudi">✕</div>
+            <img id="lbImg" alt="immagine ingrandita">
+        </div>
+
+        <!-- Script -->
+        <script src="script.js"></script>
+    </body>
+</html>
