@@ -52,3 +52,21 @@
     });
   }
 })();
+
+
+
+// Filtra foto
+function filterSelection(c) {
+      let images = document.getElementsByClassName("filterDiv");
+      let buttons = document.querySelectorAll(".foto-menu button");
+      buttons.forEach(b => b.classList.remove("active"));
+      event.target.classList.add("active");
+      if (c === "all") c = "";
+      for (let i = 0; i < images.length; i++) {
+        images[i].style.display = images[i].className.indexOf(c) > -1 ? "block" : "none";
+      }
+    }
+    filterSelection("all");
+
+
+
